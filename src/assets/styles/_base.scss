@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 0;
+  padding-top: 60px;
+  margin: 0;
+  overflow-x: hidden;
+
+  @include small-desktop {
+    padding-top: 100px;
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: $font-family-sans-serif;
+  font-size: 16px;
+  color: $primary-dark-color;
+  background-color: $recetarium-bg;
+}

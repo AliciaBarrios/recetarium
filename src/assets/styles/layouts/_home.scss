@@ -1,57 +1,107 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  margin: 0;
-  padding: 2rem;
-  font-family: $font-family-sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  background-color: $uoc-bg;
-  color: $uoc-corporate;
-}
-
-.uoc-container {
-  max-width: 800px;
-  margin: auto;
-  padding: 2rem;
-  border-radius: 2rem;
+.article {
+  width: 80vw;
+  margin: 0 auto;
   text-align: center;
-  background-color: #fff;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.06);
-}
 
-.uoc-logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 1.5rem;
-  max-width: 200px;
-  height: auto;
-
-  @media (min-width: $mqMinWidth) {
-    max-width: none;
+  @include small-desktop {
+    width: 60vw;
   }
-}
 
-.uoc-title {
-  font-family: $font-family-serif;
-  font-size: 24px;
-  font-weight: 700;
-  color: $uoc-corporate;
-
-  @media (min-width: $mqMinWidth) {
-    font-size: 36px;
+  &__image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
   }
-}
 
-.uoc-footer {
-  margin-top: 1.5rem;
-  font-size: 0.75rem;
-  text-align: center;
+  &__icon {
+    color: $secondary-dark-color;
+  }
+
+  &__title {
+    font-size: 2.75rem;
+  }
+
+  &__text {
+    font-size: 1.25rem;
+  }
+
+  &__list {
+    font-size: 1.25rem;
+    list-style: none;
+
+    &--highlight {
+      padding: 1rem;
+      background-color: $secondary-light-color;
+      border-radius: 15px;
+
+      @include small-desktop {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+      }
+
+      @include big-desktop {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    &-item {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  &__section {
+    text-align: justify;
+    scroll-margin-top: 120px;
+
+    @include small-desktop {
+      scroll-margin-top: 190px;
+    }
+
+    &-title {
+      font-size: 1.75rem;
+      text-align: left;
+    }
+
+    &-subtitle {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @include small-desktop {
+      flex-direction: row;
+    }
+
+    &-item {
+      position: relative;
+      display: inline-block;
+    }
+
+    &-img {
+      display: block;
+      width: 400px;
+      max-width: 100%;
+      height: auto;
+      border-radius: 15px;
+    }
+
+    &-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 10px;
+      font-size: 1rem;
+      color: white;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 0 0 15px 15px;
+    }
+  }
 }

@@ -1,27 +1,191 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
+    <!-- do not remove this line! -->
+    <title>Recetarium</title>
   </head>
   <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
+    <include src="./views/header.html"></include>
+    <article class="article">
+      <h1 class="article__title">
+        Fricandó, un plato típico de la gastronomía catalana
+      </h1>
+      <section id="historia" class="article__section">
+        <h2 class="article__section-title">
+          <i class="fa-solid fa-landmark article__icon"></i> Historia de
+          Vallgorguina
+        </h2>
+        <p class="article__text">
+          Vallgorguina, un pintoresco municipio de la comarca del Maresme, se
+          encuentra en un entorno privilegiado entre las sierras del Montnegre y
+          el Corredor, una zona montañosa rica en naturaleza e historia. Situado
+          a unos 35 km de Barcelona, Vallgorguina combina la tranquilidad de su
+          entorno natural con un notable patrimonio histórico. Su ubicación
+          geográfica permite disfrutar de paisajes espectaculares, con bosques
+          frondosos, montañas y una gran variedad de especies vegetales y
+          animales. El municipio es conocido por su profunda conexión con la
+          naturaleza y las tradiciones, además de un legado cultural que se
+          refleja en sus edificios y monumentos históricos.
+        </p>
+        <p class="article__text">
+          El pueblo de Vallgorguina conserva un aire tranquilo y auténtico, con
+          calles que evocan la historia y el pasado rural. El entorno montañoso
+          y los caminos ofrecen una sensación de regreso a la naturaleza,
+          mientras que el casco antiguo, con construcciones que datan del siglo
+          XVIII, conserva la esencia de la vida tradicional. Además, las
+          leyendas que rodean lugares como el dolmen de la Pedra Gentil o la
+          ermita de Santa Eulàlia de Tapioles, llenas de misterios y mitos, son
+          una parte fundamental del atractivo turístico y cultural de la zona.
+        </p>
+        <p class="article__text">
+          La gastronomía de Vallgorguina es una muestra de la cocina tradicional
+          de montaña, con platos elaborados a partir de productos locales.
+          Hierbas de montaña, carne de caza y quesos artesanales son solo
+          algunas de las delicias que se pueden degustar en los restaurantes
+          locales. Los visitantes pueden disfrutar de una cocina casera que
+          destaca por los sabores auténticos y la utilización de productos
+          frescos y naturales. Los platos tradicionales como el fricandó,
+          cassola de tros o las carnes de caza son especialidades típicas de la
+          región, perfectas para conocer el sabor de las tierras del Montnegre.
+        </p>
+        <p class="article__text">
+          En el artículo que nos ocupa, vamos a hablar sobre el fricandó, este
+          es el guiso catalán por excelencia. Tradicionalmente se elabora con
+          ternera y setas aunque se ha ido modernizando y ha adoptado nuevas
+          formas con ingredientes muy diversos. Sea como sea, una cocción muy
+          lenta es la clave del éxito del plato, entre otros secretos que
+          descubriremos en la receta que podrás encontrar a continuación.
+        </p>
+      </section>
+      <section id="receta" class="article__section">
+        <h2 class="article__section-title">
+          <i class="fa-solid fa-bell-concierge article__icon"></i> Receta
+          Fricandó
+        </h2>
+        <img
+          src="./assets/images/img-fricando.jpg"
+          alt="Imagen de fricandó"
+          class="article__image"
+        />
+        <div class="article__statistics">
+          <ul class="article__list article__list--highlight">
+            <li class="article__list-item"><i class="fa-solid fa-clock article__icon"></i> Elaboración 90 minutos</li>
+            <li class="article__list-item"><i class="fa-solid fa-calendar-days article__icon"></i> Típico de Otoño</li>
+            <li class="article__list-item"><i class="fa-solid fa-utensils article__icon"></i> Fácil</li>
+            <li class="article__list-item"><i class="fa-solid fa-user-group article__icon"></i> Para 6 personas</li>
+            <li class="article__list-item"><i class="fa-solid fa-dumbbell article__icon"></i> 231Kcal/100g</li>
+            <li class="article__list-item"><i class="fa-solid fa-euro-sign article__icon"></i> 3€/persona</li>
+          </ul>
+        </div>
+        <div class="article__ingredients">
+          <h3 class="article__section-subtitle">Ingredientes:</h3>
+          <ul class="article__list article__list--highlight">
+            <li class="article__list-item"><i class="fa-solid fa-asterisk article__icon"></i> 500g de carne de guisar de ternera</li>
+            <li class="article__list-item"><i class="fa-solid fa-asterisk article__icon"></i> 1 manojo de perejil fresco</li>
+            <li class="article__list-item"><i class="fa-solid fa-asterisk article__icon"></i> 500ml de agua</li>
+            <li class="article__list-item"><i class="fa-solid fa-asterisk article__icon"></i> 3 tomates maduros</li>
+            <li class="article__list-item"><i class="fa-solid fa-asterisk article__icon"></i> 1 hoja de laurel</li>
+            <li class="article__list-item"><i class="fa-solid fa-asterisk article__icon"></i> 1 copa de vino blanco</li>
+            <li class="article__list-item"><i class="fa-solid fa-asterisk article__icon"></i> 1 cebolla grande</li>
+            <li class="article__list-item"><i class="fa-solid fa-asterisk article__icon"></i> 1 puñado de almendras tostadas</li>
+            <li class="article__list-item"><i class="fa-solid fa-asterisk article__icon"></i> Aceite de oliva virgen extra</li>
+            <li class="article__list-item"><i class="fa-solid fa-asterisk article__icon"></i> 1 paquete de setas</li>
+            <li class="article__list-item"><i class="fa-solid fa-asterisk article__icon"></i> Pimienta negra molida</li>
+            <li class="article__list-item"><i class="fa-solid fa-asterisk article__icon"></i> Harina de trigo</li>
+            <li class="article__list-item"><i class="fa-solid fa-asterisk article__icon"></i> 2 diente de ajo</li>
+            <li class="article__list-item"><i class="fa-solid fa-asterisk article__icon"></i> Sal</li>
+          </ul>
+        </div>
+        <div class="article__steps">
+          <h3 class="article__section-subtitle">Pasos:</h3>
+          <ol class="article__list">
+            <li class="article__list-item">
+              <i class="fa-solid fa-1 article__icon"></i>
+              Para comenzar, debemos poner en remojo las senderuelas en un
+              recipiente con agua tibia. Este paso es muy importante si queremos
+              preparar fricandó con setas de forma correcta. Después
+              salpimentamos al gusto la carne y enharinamos. En una sartén con
+              un chorrito de aceite de oliva, freímos los filetes vuelta y
+              vuelta, reservando para usar más tarde.
+            </li>
+            <li class="article__list-item">
+              <i class="fa-solid fa-2 article__icon"></i>
+              Para hacer el sofrito, cortamos la cebolla y la doramos a fuego
+              lento, añadiendo los tomates pelados. Removemos bien y una vez
+              esté confitado, añadimos la carne para que se mezclen los sabores.
+              Incorporamos a la sartén la hoja de laurel y la copa de vino,
+              dejando que reduzca. Una vez listo, sacamos las setas del agua y
+              las añadimos también echando un poco de sal al gusto.
+            </li>
+            <li class="article__list-item">
+              <i class="fa-solid fa-3 article__icon"></i>
+              Mientras dejamos a fuego lento el fricandó durante hora y media,
+              hacemos la picada. Para ello, trituramos el ajo, las almendras
+              tostadas y el perejil, añadiendo un poco de agua de cocción con la
+              ayuda de una picadora o thermomix. Lo añadimos al guiso y dejamos
+              que termine de cocer.
+            </li>
+            <li class="article__list-item">
+              <i class="fa-solid fa-4 article__icon"></i>
+              A la hora de servirlo, es mejor que dejemos que el plato repose al
+              menos unas horas para que tenga aún más sabor. De hecho, la receta
+              fricandó de la abuela indica que se haga el día antes. por lo que
+              podemos aprovechar y cocinar otros entrantes para el menú como
+              unos champiñones rellenos o un delicioso carpaccio de ternera.
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section id="tipicos" class="article__section">
+        <h2 class="article__section-title">
+          <i class="fa-solid fa-crown article__icon"></i> Otros platos típicos
+          de la localidad
+        </h2>
+        <div class="article__gallery">
+          <figure class="article__gallery-item">
+            <img
+              src="./assets/images/img-butifarra.jpg"
+              alt="Imágen butifarra con judías"
+              class="article__gallery-img"
+            />
+            <a href="#"
+              ><figcaption class="article__gallery-caption">
+                Butifarra con judías
+              </figcaption></a
+            >
+          </figure>
+          <figure class="article__gallery-item">
+            <img
+              src="./assets/images/img-cazuela.jpg"
+              alt="Imágen cazuela de campo"
+              class="article__gallery-img"
+            />
+            <a href="#"
+              ><figcaption class="article__gallery-caption">
+                Cazuela de campo
+              </figcaption></a
+            >
+          </figure>
+          <figure class="article__gallery-item">
+            <img
+              src="./assets/images/img-esqueixada.jpg"
+              alt="Imágen esnalada de bacalao"
+              class="article__gallery-img"
+            />
+            <a href="#"
+              ><figcaption class="article__gallery-caption">
+                Ensalda de bacalao
+              </figcaption></a
+            >
+          </figure>
+        </div>
+      </section>
+    </article>
     <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+    <script type="module" src="./assets/scripts/main.js"></script>
+    <!-- do not remove this line! -->
   </body>
 </html>

@@ -8,13 +8,14 @@
  */
 
 @import "variables";
+@import "mixins";
 
 /**
  * Import npm dependencies
  * see: https://v2.parceljs.org/features/module-resolution/
  * see commented examples below
  */
-
+@import "../../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 // @import "some-node-module";
 // @import "@some-company/some-node-module";
 
@@ -24,6 +25,8 @@
  */
 
 @import "layouts/home";
+@import "modules/header";
+@import "base";
 
 /**
  * Do NOT include anything else in this file!
